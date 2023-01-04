@@ -1,0 +1,52 @@
+.icon{
+    @apply cursor-pointer w-8 h-8 rounded 
+}
+
+.cards{
+    @apply flex relative w-full h-full flex-row flex-wrap justify-around
+}
+
+.card{
+    transform-style: preserve-3d;
+    @apply flex w-52 md:w-52 h-60 flex-wrap gap-4 md:absolute 
+}
+
+/* .card:hover{
+    transform: rotateY(180deg);
+    @apply bg-opacity-50 shadow-2xl
+} */
+
+.girar{
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    @apply flex w-52 md:w-52 h-60 flex-wrap gap-4 md:absolute  
+    /* @apply bg-opacity-50 shadow-2xl */
+}
+
+.cardFront>span{
+    @apply w-full text-center text-2xl
+}
+
+.cardBack>span{
+    @apply w-full text-center text-2xl
+}
+
+.cardFront{
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    @apply absolute w-full h-full flex flex-wrap flex-col justify-center gap-4 items-center bg-gray-700 bg-opacity-40 rounded-2xl
+}
+
+.cardBack{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    @apply absolute w-full h-full flex flex-wrap flex-col justify-center gap-4 items-center  bg-gray-700 bg-opacity-40 rounded-2xl
+}
+
+.cardBack>span{
+    @apply top-0
+}
+
+.iconWrapper{
+    @apply flex flex-wrap justify-center px-3 gap-2
+}

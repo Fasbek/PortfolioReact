@@ -1,0 +1,22 @@
+.container{
+    @apply flex items-center flex-wrap justify-center w-full pt-14
+}
+
+.container>span{
+    @apply text-justify w-96 px-6 text-lg
+}
+
+.img{
+    /* transform: scale(0.7); */
+    @apply rounded-full w-36 
+}
+
+.imgContainer{
+    @apply justify-center
+}
+
+.whiteGradient{
+    background: rgba(255, 100, 255, 0.4);
+    filter: blur(750px);
+    @apply absolute w-1/2 h-1/2 rounded-full top-96 right-0
+}

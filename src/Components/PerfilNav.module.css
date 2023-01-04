@@ -1,0 +1,15 @@
+.iconwrapper{
+    @apply flex cursor-pointer hover:nm-concave-gray-800-xs bg-gray-700 bg-opacity-40 rounded-lg w-40 h-12 items-center justify-center
+}
+
+.iconwrappernm{
+    @apply flex cursor-pointer bg-opacity-40 rounded-lg w-40 h-12 items-center justify-center nm-concave-slate-900-sm
+}
+
+.icon{ 
+    @apply opacity-100
+}
+
+.wrappercontainer{
+    @apply flex gap-4 flex-col ml-4 mt-10 
+}

@@ -1,0 +1,28 @@
+.box{
+    @apply flex justify-center bg-red-500 
+}
+
+.container{
+    height: 70vh;
+    @apply bg-black text-white flex items-center gap-3 justify-center flex-col w-full
+}
+
+.container>span{
+    @apply font-poppins font-semibold text-4xl
+}
+.container .swiper{
+    overflow: visible!important;
+}
+
+.containerSlider{
+    /* width: 100rem; */
+    @apply mt-12 w-3/4
+}
+
+.containerSlider .swiper-slide{
+    @apply w-96
+}
+
+.container img{
+    @apply w-72 rounded-lg h-48 
+}
