@@ -3,12 +3,12 @@
 }
 
 .container>span{
-    @apply text-justify w-96 px-6 text-lg
+    @apply text-justify w-96 px-6 text-sm md:text-lg
 }
 
 .img{
     /* transform: scale(0.7); */
-    @apply rounded-full w-36 
+    @apply rounded-full w-28 md:w-36 
 }
 
 .imgContainer{
@@ -20,3 +20,5 @@
     filter: blur(750px);
     @apply absolute w-1/2 h-1/2 rounded-full top-96 right-0
 }
+
+/* afasdfasdgas */

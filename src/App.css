@@ -59,25 +59,25 @@
   top: 250px;
   /* left: 100px; */
   font-size: 40px;
-  @apply font-poppins font-semibold left-28
+  @apply font-poppins font-semibold md:left-28
 }
 
 .cargo{
   color: white;
   position: absolute;
   top: 298px;
-  left: 100px;
+  /* left: 100px; */
   font-size: 27px;
   /* @apply font-poppins font-semibold */
-  @apply left-28
+  @apply md:left-28
 }
 
 .maquina-escribir{
   /* background-color: rgb(92, 199, 221);  */
   top: 338px;
-  left: 100px;
+  /* left: 100px; */
   position: absolute;
-  @apply left-28
+  @apply md:left-28
 }
 
 .maquina-escribir:after{

@@ -3,12 +3,12 @@
 }
 
 .cards{
-    @apply flex relative w-full h-full flex-row flex-wrap justify-around
+    @apply flex relative w-full h-full flex-row flex-wrap justify-around 
 }
 
 .card{
     transform-style: preserve-3d;
-    @apply flex w-52 md:w-52 h-60 flex-wrap gap-4 md:absolute 
+    @apply flex w-48 md:w-52 h-60 flex-wrap gap-4 md:absolute 
 }
 
 /* .card:hover{
@@ -19,7 +19,7 @@
 .girar{
     transform: rotateY(180deg);
     transform-style: preserve-3d;
-    @apply flex w-52 md:w-52 h-60 flex-wrap gap-4 md:absolute  
+    @apply flex w-48 md:w-52 h-60 flex-wrap gap-4 md:absolute  
     /* @apply bg-opacity-50 shadow-2xl */
 }
 
