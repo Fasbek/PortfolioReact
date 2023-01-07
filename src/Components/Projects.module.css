@@ -3,13 +3,14 @@
 }
 
 .container{
-    height: 70vh;
-    @apply bg-black text-white flex items-center gap-3 justify-center flex-col w-full
+    height: 50vh;
+    @apply bg-black text-white flex items-center gap-3 justify-center flex-col w-full pb-3 
 }
 
 .container>span{
     @apply font-poppins font-semibold text-4xl
 }
+
 .container .swiper{
     overflow: visible!important;
 }
@@ -25,4 +26,12 @@
 
 .container img{
     @apply w-72 rounded-lg h-48 
+}
+
+.whiteGradient{
+    background: rgba(208, 155, 86, 0.099);
+    filter: blur(750px);
+    
+    @apply absolute w-1/2 h-1/2 rounded-full left-0;
+    top: 70%;
 }

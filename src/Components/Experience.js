@@ -26,7 +26,7 @@ function Experience() {
     ];
 
     return ( 
-        <section className={styles.container}>
+        <section className={visible ==="fileCheck" ? styles.containerScreen : styles.container}>
             <div className={styles.whiteGradient}></div>
             <div className={styles.greenGradient}></div>
             <div className={styles.left}>
@@ -53,7 +53,7 @@ function Experience() {
             <div className={styles.right}>
                 {/* <span>Habilidades</span> */}
                 <div className={styles.pinkGradient}></div>
-                <div className={styles.containerright}>
+                {/* <div className={styles.containerright}> */}
                     {visible === "fileCheck" && <SkillSet />}
                     {visible === "user" && <AboutMe />}
                     {/* <Swiper>
@@ -61,7 +61,7 @@ function Experience() {
                         <SwiperSlide><div style={{background: "green"}}>Hola</div></SwiperSlide>
                         <SwiperSlide><div style={{background: "blue"}}>Hola</div></SwiperSlide>
                     </Swiper> */}
-                </div>
+                {/* </div> */}
             </div>
         </section>
      );

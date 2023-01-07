@@ -52,6 +52,7 @@ function SkillSet() {
     
     const otherIcons = [GitIcon]; 
     return ( 
+        <div className="prueba">
         <div className={styles.cards}> 
             
             <div className={cardFlipFront === "volver" ? styles.girar : styles.card} style={{left: 80}}> 
@@ -94,6 +95,7 @@ function SkillSet() {
                     <span>Other Tecnologies</span>Hola
                     <Button msj={"VolverOther"}/> 
                 </div>
+            </div>
             </div>
             {/* <button onClick={() => handleClick()}>click</button> */}
             {/* {skillsetIcons.map((Icon)=><Icon className={styles.icon}></Icon>)} */}

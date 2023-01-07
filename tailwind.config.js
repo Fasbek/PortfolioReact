@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-       height: {
+      height: {
         sm: '8px',
         md: '16px',
         lg: '24px',
@@ -18,6 +18,9 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      fontSize: {
+        xsl: '40px',
+      }
     },
   },
   plugins: [require('tailwindcss-neumorphism')],

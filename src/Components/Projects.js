@@ -13,34 +13,34 @@ function Projects() {
     return ( 
     <div className={styles.box}>
         <div className={styles.container}>
+            <div className={styles.whiteGradient}></div>
+            <span>Projects</span>
 
-                <span>Projects</span>
-
-                <Swiper
-                    spaceBetween={1}
-                    slidesPerView={3}
-                    grabCursor={true}
-                    className={styles.containerSlider}
-                    >
-                    <SwiperSlide>
-                        <img src={img1} alt="img"/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img2} alt="img"/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img3} alt="img"/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img4} alt="img"/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img5} alt="img"/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img6} alt="img"/>
-                    </SwiperSlide>
-                </Swiper>
+            <Swiper
+                spaceBetween={1}
+                slidesPerView={3}
+                grabCursor={true}
+                className={styles.containerSlider}
+                >
+                <SwiperSlide>
+                    <img src={img1} alt="img"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={img2} alt="img"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={img3} alt="img"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={img4} alt="img"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={img5} alt="img"/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={img6} alt="img"/>
+                </SwiperSlide>
+            </Swiper>
 
         </div> 
     </div>);
