@@ -41,7 +41,9 @@ function CanvasThree() {
     // console.log(galaxyRef.current);
     useFrame((state, delta) => {
         // console.log(delta);
-        sphereRef.current.rotation.y += delta;
+        // sphereRef.current.rotation.y += delta - 0.016;
+        sphereRef.current.rotation.y += 0.009;
+        console.log(delta);
         // galaxyRef.current.rotation.y += delta;
         // console.log(camera.position);
         // console.log(camera.aspect);

@@ -44,6 +44,40 @@ function SkillSet() {
     //     console.log(cardFlipBack);
     // }
 
+    // const iconMouseOverHandler = (ev) => {
+    //     const label = ev.currentTarget;
+    //     label.innerHtml = "<span>text<span>"
+    //     console.log('Label: ', label);
+    // };
+    
+    // const iconMouseOutHandler = (ev) => {
+    //     const label = ev.currentTarget;
+    //     console.log('Label out: ', label);
+    // };
+
+    const frontEndIconss = [
+        {item: HtmlIcon, name: "Html"},
+        {item: CssIcon, name: "Css"},
+        {item: JsIcon, name: "Javascript"},
+        {item: ThreejsIcon, name: "Three js"},
+        {item: TailwindIcon, name: "Tailwind"},
+        {item: PrimeNgIcon, name: "Prime Ng"},
+        {item: AngularIcon, name: "Angular js"},
+        {item: NodeIcon, name: "Node js"},
+        {item: NpmIcon, name: "Npm"}];
+
+    const backEndIconss = [
+        {item: NodeIcon, name: "Node js"},
+        {item: NpmIcon, name: "Npm"},
+        {item: JavaIcon, name: "Java"},
+        {item: SpringIcon, name: "Spring"},
+        {item: HibernateIcon, name: "Hibernate"},
+    ]
+
+    const otherIconss = [
+        {item: GitIcon, name: "Git"},
+    ]
+
     const frontEndIcons = [HtmlIcon, CssIcon, JsIcon, ThreejsIcon, TailwindIcon, PrimeNgIcon, 
         AngularIcon, NodeIcon, NpmIcon];
 
@@ -54,10 +88,14 @@ function SkillSet() {
     return ( 
         <div className={styles.cards}> 
             
-            <div className={cardFlipFront === "volver" ? styles.girar : styles.card} style={{left: 80}}> 
+            <div className={cardFlipFront === "volver" ? styles.girar : styles.card}> 
                 <div className={styles.cardFront}>
                     <span>FrontEnd</span>
-                    <div className={styles.iconWrapper}>{frontEndIcons.map((Icon)=><Icon style={{top: "0"}} className={styles.icon}></Icon>)}
+                    <div className={styles.iconWrapper}>{frontEndIconss.map((Icon)=>
+                        <div>
+                            <span className={styles.iconLabel}>{Icon.name}</span>
+                            <Icon.item style={{top: "0"}} className={styles.icon}></Icon.item>
+                        </div>)}
                     </div>
                     <Button msj={"MasFront"}/> 
                 </div>
@@ -71,27 +109,35 @@ function SkillSet() {
                     <Button msj={"VolverFront"}/> 
                 </div>
             </div>
-            <div className={cardFlipBack === "volver" ? styles.girar : styles.card} style={{top: 80, left: 380}}>
+            <div className={cardFlipBack === "volver" ? styles.girar : styles.card}>
                 <div className={styles.cardFront}>
                     <span>BackEnd</span>
-                    <div className={styles.iconWrapper}>{backEndIcons.map((Icon)=><Icon className={styles.icon}></Icon>)}
+                    <div className={styles.iconWrapper}>{backEndIconss.map((Icon)=>
+                    <div>
+                        <span className={styles.iconLabel}>{Icon.name}</span>
+                        <Icon.item style={{top: "0"}} className={styles.icon}></Icon.item>
+                    </div>)}
                     </div>
                     <Button msj={"MasBack"}/> 
                 </div>
                 <div className={styles.cardBack}>
-                    <span>BackEnd</span>Hola
+                    <span>BackEnd</span>
                     <Button msj={"VolverBack"}/> 
                 </div>
             </div>
-            <div className={cardFlipOther === "volver" ? styles.girar : styles.card} style={{top: 250, left: 200}}>
+            <div className={cardFlipOther === "volver" ? styles.girar : styles.card}>
                 <div className={styles.cardFront}>
                     <span>Other Tecnologies</span>
-                    <div className={styles.iconWrapper}>{otherIcons.map((Icon)=><Icon className={styles.icon}></Icon>)}
+                    <div className={styles.iconWrapper}>{otherIconss.map((Icon)=>
+                    <div>
+                        <span className={styles.iconLabel}>{Icon.name}</span>
+                        <Icon.item style={{top: "0"}} className={styles.icon}></Icon.item>
+                    </div>)}
                     </div>
                     <Button msj={"MasOther"}/> 
                 </div>
                 <div className={styles.cardBack}>
-                    <span>Other Tecnologies</span>Hola
+                    <span>Other Tecnologies</span>
                     <Button msj={"VolverOther"}/> 
                 </div>
             </div>

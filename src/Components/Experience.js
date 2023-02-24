@@ -26,41 +26,36 @@ function Experience() {
     ];
 
     return ( 
-        <section className={styles.container}>
-            <div className={styles.whiteGradient}></div>
-            <div className={styles.greenGradient}></div>
-            <div className={styles.left}>
-                <div>
-                    <span>About </span>
-                    <span>Me</span>
+        <section className={styles.section}>
+            <div className={styles.container}>
+                {/* <div className={styles.whiteGradient}></div>
+                <div className={styles.greenGradient}></div> */}
+                <div className={styles.left}>
+                    <div>
+                        <span>About </span>
+                        <span>Me</span>
+                    </div>
+                    <PerfilNav Icons={perfilIcons} className={styles.perfilnav}/>
+                    
+                    {/* <img className="w-20" src={infoFile} /> */}
+                    
+                    {/* <div className={styles.wrappercontainer}>
+                        <div className={styles.iconwrapper}>
+                            <User className={styles.icon} size="3rem" color="white" onClick={()=>{setShow({user: true, fileCheck: false})}} />
+                        </div>
+                        <div className={styles.iconwrapper}>
+                            <FileCheck className={styles.icon} size="3rem" color="white" onClick={()=>{setShow({user: false, fileCheck: true})}}/>
+                        </div>
+                        {visible}
+                        {visible == "user" ? "User" : "NoUser"}
+                        {visible == "fileCheck" ? "FileCheck" : "NoFile" }
+                    </div> */}
                 </div>
-                <PerfilNav Icons={perfilIcons} className={styles.perfilnav}/>
-                
-                {/* <img className="w-20" src={infoFile} /> */}
-                
-                {/* <div className={styles.wrappercontainer}>
-                    <div className={styles.iconwrapper}>
-                        <User className={styles.icon} size="3rem" color="white" onClick={()=>{setShow({user: true, fileCheck: false})}} />
+                <div className={styles.right}>
+                    <div className={styles.containerright}>
+                        {visible === "fileCheck" && <SkillSet />}
+                        {visible === "user" && <AboutMe />}
                     </div>
-                    <div className={styles.iconwrapper}>
-                        <FileCheck className={styles.icon} size="3rem" color="white" onClick={()=>{setShow({user: false, fileCheck: true})}}/>
-                    </div>
-                    {visible}
-                    {visible == "user" ? "User" : "NoUser"}
-                    {visible == "fileCheck" ? "FileCheck" : "NoFile" }
-                </div> */}
-            </div>
-            <div className={styles.right}>
-                {/* <span>Habilidades</span> */}
-                <div className={styles.pinkGradient}></div>
-                <div className={styles.containerright}>
-                    {visible === "fileCheck" && <SkillSet />}
-                    {visible === "user" && <AboutMe />}
-                    {/* <Swiper>
-                        <SwiperSlide><div style={{background: "red"}}>Hola</div></SwiperSlide>
-                        <SwiperSlide><div style={{background: "green"}}>Hola</div></SwiperSlide>
-                        <SwiperSlide><div style={{background: "blue"}}>Hola</div></SwiperSlide>
-                    </Swiper> */}
                 </div>
             </div>
         </section>

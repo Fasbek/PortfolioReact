@@ -1,15 +1,16 @@
 .box{
-    @apply flex justify-center bg-red-500 
+    @apply flex justify-center items-center h-screen md:pl-60 md:pt-9
 }
 
 .container{
-    height: 70vh;
-    @apply bg-black text-white flex items-center gap-3 justify-center flex-col w-full
+    height: 85vh;
+    @apply bg-sky-900 bg-opacity-40 text-white flex items-center gap-3 flex-col w-1/2 rounded-md 
 }
 
 .container>span{
-    @apply font-poppins font-semibold text-4xl
+    @apply font-poppins font-semibold text-4xl pt-8
 }
+
 .container .swiper{
     overflow: visible!important;
 }
@@ -25,4 +26,8 @@
 
 .container img{
     @apply w-72 rounded-lg h-48 
+}
+
+.description{
+    @apply px-16 pt-7 text-white text-lg text-justify
 }

@@ -1,14 +1,37 @@
 .icon{
-    @apply cursor-pointer w-8 h-8 rounded 
+    @apply cursor-pointer w-7 h-7 rounded z-0
+}
+
+.icon:hover{
+    transform: scale(0.8);
+    /* @apply  */
+}
+
+.iconLabel{
+    transform: translate(0px, 10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    @apply absolute z-10 text-[0.5rem] text-center w-9 -left-1 text-white bg-slate-900 absolute rounded -top-3
+}
+
+.iconWrapper>div{
+    @apply relative
+}
+
+.iconWrapper>div:hover span{
+    opacity: 1;
+    transform: translate(0px, 0px);
+    /* @apply relative */
 }
 
 .cards{
-    @apply flex relative w-full h-full flex-row flex-wrap justify-around 
+    @apply flex relative w-full h-full flex-row flex-wrap justify-around
 }
 
 .card{
     transform-style: preserve-3d;
-    @apply flex w-48 md:w-52 h-60 flex-wrap gap-4 md:absolute 
+    @apply flex w-44 h-56 flex-wrap 
 }
 
 /* .card:hover{
@@ -19,7 +42,7 @@
 .girar{
     transform: rotateY(180deg);
     transform-style: preserve-3d;
-    @apply flex w-48 md:w-52 h-60 flex-wrap gap-4 md:absolute  
+    @apply flex w-44 h-56 flex-wrap 
     /* @apply bg-opacity-50 shadow-2xl */
 }
 
@@ -34,13 +57,13 @@
 .cardFront{
     backface-visibility: hidden;
     transform: rotateY(0deg);
-    @apply absolute w-full h-full flex flex-wrap flex-col justify-center gap-4 items-center bg-gray-700 bg-opacity-40 rounded-2xl
+    @apply  w-full h-full flex flex-col justify-between py-2 items-center bg-gray-700 bg-opacity-40 rounded-2xl absolute
 }
 
 .cardBack{
     backface-visibility: hidden;
     transform: rotateY(180deg);
-    @apply absolute w-full h-full flex flex-wrap flex-col justify-center gap-4 items-center  bg-gray-700 bg-opacity-40 rounded-2xl
+    @apply  w-full h-full flex flex-col justify-between py-2 items-center bg-gray-700 bg-opacity-40 rounded-2xl absolute
 }
 
 .cardBack>span{
@@ -48,5 +71,5 @@
 }
 
 .iconWrapper{
-    @apply flex flex-wrap justify-center px-3 gap-2
+    @apply flex flex-wrap justify-center px-3 gap-2 
 }

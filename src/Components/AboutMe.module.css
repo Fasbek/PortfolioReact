@@ -1,5 +1,5 @@
 .container{
-    @apply flex items-center flex-wrap justify-center w-full pt-14
+    @apply flex items-center flex-wrap justify-center w-full 
 }
 
 .container>span{
